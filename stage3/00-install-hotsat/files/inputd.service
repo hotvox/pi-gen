@@ -1,11 +1,11 @@
 [Unit]
-Description=Hotvox Satellite Daemon
+Description=Hotvox Satellite Input Daemon
 After=network.target
 
 [Service]
 User=root
 WorkingDirectory=/root/hotsat
-ExecStart=/usr/bin/python3 /root/hotsat/daemon.py
+ExecStart=/usr/bin/python3 /root/hotsat/inputd.py
 Restart=always
 RestartSec=5s
 
