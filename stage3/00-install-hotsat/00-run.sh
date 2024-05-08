@@ -14,6 +14,6 @@ EOF
 # If WPA_SSID and WPA_PASSWORD are set, configure wlan
 if [ -v WPA_SSID ] && [ -v WPA_PASSWORD ]; then
 	on_chroot <<- EOF
-		/usr/lib/raspberrypi-sys-mods set_wlan "${WPA_SSID}" "${WPA_PASSWORD}"
+		/usr/lib/raspberrypi-sys-mods/imager_custom set_wlan "${WPA_SSID}" "${WPA_PASSWORD}"
 	EOF
 fi
